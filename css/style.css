@@ -1,0 +1,50 @@
+/* Global styles */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: black;
+}
+
+/* Header */
+header {
+    background-color: green;
+    text-align: center;
+}
+.top-page {
+    display: flex;
+    align-items: center;
+}
+header img {
+    width: 100px;
+    height: 100px;
+}
+header nav.navMenu {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 100%;
+    margin: 20px;
+}
+header nav.navMenu li {
+    display: flex;
+    position: relative;
+    font-size: large;
+}
+header nav.navMenu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main section */
+main {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+}

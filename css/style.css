@@ -37,14 +37,39 @@ header nav.navMenu li a {
     color: #fff;
     text-decoration: none;
 }
+h3 {
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
 
 /* Main section */
 main {
     padding: 20px;
 }
+section {
+    padding: 20px;
+}
+section a {
+    text-decoration: none;
+    color: green ;
+    font-weight: bold;
+}
+.site-structure {
+    list-style: square;
+}
+.logos {
+    width: 20px;
+    height: 20px;
+}
 
+/* Footer */
 footer {
     text-align: center;
     padding: 10px 0;
     margin: 0;
+}
+footer a {
+    text-decoration: none;
+    color: #fff;
 }

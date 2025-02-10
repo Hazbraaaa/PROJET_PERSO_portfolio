@@ -1,16 +1,18 @@
 /* Global styles */
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: poppins;
     line-height: normal;
     margin: 0;
     padding: 0;
-    color: white;
-    background-color: black;
+    color: #F4FEFE;
+    background: radial-gradient(circle at bottom left, #121212 65%, #007D51 100%);
+}
+hr {
+    margin-top: 3em;
 }
 
 /* Header */
 header {
-    background-color: green;
     text-align: center;
 }
 .top-page {
@@ -34,12 +36,19 @@ header nav.navMenu li {
     font-size: large;
 }
 header nav.navMenu li a {
-    color: #fff;
+    color: #F4FEFE;
     text-decoration: none;
+    border: 3px solid #F4FEFE;
+    border-radius: 30px;
+    padding: 0.3em;
+    box-shadow: 2px 2px 1em #F4FEFE;
+}
+header nav.navMenu li a:hover {
+    transform: scale(1.2);
 }
 h3 {
+    margin-top: 3em;
     font-weight: bold;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
@@ -52,8 +61,13 @@ section {
 }
 section a {
     text-decoration: none;
-    color: green ;
+    color: #F4FEFE;
     font-weight: bold;
+    text-shadow: #007D51 1px 1px 20px;
+
+}
+.projectsList {
+    list-style: none;
 }
 .site-structure {
     list-style: square;
@@ -61,6 +75,47 @@ section a {
 .logos {
     width: 20px;
     height: 20px;
+}
+.form-container {
+    background: #F4FEFE;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 1em #007d51;
+    width: 400px;
+}
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+}
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 96%;
+}
+textarea {
+    resize: vertical;
+    height: 80px;
+}
+.submit-btn {
+    background-color:#007d51;
+    color: #F4FEFE;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.submit-btn:hover {
+    background-color: #009B6D;
 }
 
 /* Footer */
@@ -71,5 +126,5 @@ footer {
 }
 footer a {
     text-decoration: none;
-    color: #fff;
+    color: #F4FEFE;
 }

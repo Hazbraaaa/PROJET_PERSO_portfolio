@@ -4,63 +4,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HAZ - Accueil</title>
+    <title>HAZ</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/font.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
     <script src="./js/script.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <div class="top-page">
-            <img src="./img/Logo HAZ.png" alt="Logo du site">
-            <nav class="navMenu">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="projets.html">Projets</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </nav>
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="brand">
+                    <a href="#top-page"><div class="icon"><img src="./img/Logo HAZ.png" alt="LinkedIn-Icon"></div></a>
+                </div>
+                <div class="nav-list">
+                    <div class="hamburger"><div class="bar"></div></div>
+                    <ul>
+                        <li><a href="#top-page" data-after="Accueil">Accueil</a></li>
+                        <li><a href="#about" data-after="A propos">A propos</a></li>
+                        <li><a href="#projects" data-after="Projets">Projets</a></li>
+                        <li><a href="#contact" data-after="Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </header>
-    <main>
-        <section>
-            <h2>Salut !</h2>
-            <p>Moi c'est <strong>Clément</strong>,</p>
-            <p>
-                Petit, je rêvais de construire ma propre maison. C'est ce qui m'a poussé à me former en Génie Civil,
-                avec une spécialisation dans les économies d'énergie du bâtiment, car préserver l'environnement a
-                toujours été important pour moi.
-            </p>
-            <p>
-                Au fil de mes expériences en entreprise, j'ai souvent eu la sensation de ne pas avoir d'impact réel sur mon travail. J'ai utilisé de nombreux outils informatiques, mais je me heurtais sans cesse à leurs limites… jusqu'au jour où, dans mon dernier poste, j'ai voulu ajouter une fonctionnalité manquante à une application. <br>Et là, déclic : pourquoi ne pas créer moi-même ces outils ?
-            </p>
-            <p>
-                C'est ainsi que j'ai plongé dans le code. J'ai tenté la Piscine de l'École 42 à deux reprises (en posant quatre semaines de congés !), mais ça n'a pas marché. Pourtant, j'étais déjà accro, et revenir en arrière était impensable.
-            </p>
-            <p>
-                J'ai finalement trouvé la formation idéale à l'<strong><em>ADA TECH SCHOOL</em></strong>, où je me reconvertis aujourd'hui pour devenir <strong><em>Développeur Full Stack</em></strong>.
-            </p>
-            <p>
-                Je suis actuellement à la recherche d'une entreprise pour une alternance, avec l'envie de rejoindre une équipe aussi motivée que moi pour monter en compétences à vitesse grand V.
-            </p>
-        </section>
-        <section>
-            <h2>Ma Stack Tech:</h2>
-            <ul>
-                <li>HTML / CSS</li>
-                <li>Javascript</li>
-                <li>C</li>
-                <li>PHP (en cours)</li>
-                <li>SQL (en cours)</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p><a href="plan_du_site.html">Plan du site</a> - Tous droits réservés © 2025 HAZ</p>
-    </footer>
+    </section>
+    <section id="top-page">
+        <div class="top-page container">
+            <div>
+                <h1>Salut,<span></span></h1>
+                <h1>Moi c'est Clément<span></span></h1>
+                <a href="#projects" type="button" class="cta">Portfolio</a>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="about container">
+            <div class="about-top">
+                <h1 class="section-title"><span>A</span> propos</h1>
+                <p>Mon défi pour 2025 : trouver une équipe cool, engagée, où je pourrai coder, apprendre et contribuer à de
+                    vrais projets. Si tu cherches quelqu'un de motivé, curieux et pas prise de tête, on se capte ?</p>
+            </div>
+            <div class="about-bottom">
+                <div class="about-item">
+                    <div class="icon"><img src="./img/hiking.png" alt="Now-Icon"></div>
+                    <h2>Now</h2>
+                    <p>Après des années de recherches, j'ai enfin trouvé le truc qui me fait vibrer : le code.
+                        Aujourd'hui, je me forme comme Développeur Full Stack chez Ada Tech School. Entre projets en
+                        groupe, apprentissage intensif et échanges avec des pros du métier, chaque semaine est une
+                        parfaite combinaison de challenges et de découvertes.</p>
+                </div>
+                <div class="about-item">
+                    <div class="icon"><img src="./img/graduation_cap.png" alt="Background-Icon"></div>
+                    <h2>Background</h2>
+                    <p>Issu d'une formation tournée vers la construction durable, j'ai découvert le monde du code au fil
+                        de mes expériences professionnelles. Mon déclic : après avoir utilisé (et râlé sur) plein de
+                        solutions bancales, j'ai eu envie de créer les miennes.</p>
+                </div>
+                <div class="about-item">
+                    <div class="icon"><img src="./img/tools.png" alt="Skills-Icon"></div>
+                    <h2>Skills</h2>
+                    <p>• Clean Code & bonnes pratiques<br>• Git / GitHub<br>• VS Code<br>• Méthodes Agiles (Scrum,
+                        Kanban)<br>• Travail en équipe</p>
+                </div>
+                <div class="about-item">
+                    <div class="icon"><img src="./img/brickwall.png" alt="Stack-Icon"></div>
+                    <h2>Stack</h2>
+                    <p>• JavaScript, Node.js, HTML/CSS, C, SQL<br>• Et bientôt : PHP, Java, et bien d'autres langages et
+                        frameworks à venir</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="projects container">
+            <div class="projects-header">
+                <h1 class="section-title">Mes <span>P</span>rojets</h1>
+            </div>
+            <div class="all-projects">
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Dice Dice Baby</h1>
+                        <h2>Jeu de dés</h2>
+                        <p>Reproduction du jeu de société Piña Coladice. Création de compte joueur. Possibilité de jouer
+                            de 2 à 4 joueurs. Stockage des parties.</p>
+                    </div>
+                    <div class="project-img">
+                        <img src="./img/dice_dice_baby.png" alt="Projet Piña Coladice">
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Où est l'ISS ?</h1>
+                        <h2>ISS TRACKER</h2>
+                        <p>Application de visualisation de données dynamique grâce à une API. Affichage grâce à la
+                            bibliothèque Globe.gl. Reverse geocoding pour affichage du pays survolé.</p>
+                    </div>
+                    <div class="project-img">
+                        <img src="./img/ISS_tracker.png" alt="Projet ISS TRACKER">
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Quiz Game</h1>
+                        <h2>Quiz sur le cinéma</h2>
+                        <p>Plusieurs quiz sur le cinéma (celui qui me fait rire). Stockage du score. Création de timer.
+                            Reprise du quiz à l'endroit où on s'arrête.</p>
+                    </div>
+                    <div class="project-img">
+                        <img src="./img/quiz_game.png" alt="Projet Piña Coladice">
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Projet 4</h1>
+                        <h2>En cours de réalisation</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, in dolores impedit qui
+                            laborum hic vitae recusandae accusamus unde? Quidem fuga dicta maxime voluptatem aperiam
+                            adipisci mollitia molestias nobis dolor.</p>
+                    </div>
+                    <div class="project-img">
+                        <img src="./img/about.png" alt="Projet Piña Coladice">
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Projet 5</h1>
+                        <h2>En cours de réalisation</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, in dolores impedit qui
+                            laborum hic vitae recusandae accusamus unde? Quidem fuga dicta maxime voluptatem aperiam
+                            adipisci mollitia molestias nobis dolor.</p>
+                    </div>
+                    <div class="project-img">
+                        <img src="./img/about.png" alt="Projet Piña Coladice">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact container">
+            <div>
+                <h1 class="section-title">Me <span>C</span>ontacter</h1>
+            </div>
+            <div class="all-contacts">
+                <div class="contact-item">
+                    <div class="icon"><img src="./img/linkedin.png" alt="LinkedIn-Icon"></div>
+                    <a href="https://www.linkedin.com/in/clement-hazera-fullstackdev/">
+                        <div class="contact-info">
+                            <h1>LinkedIn</h1>
+                            <h2>@LinkedIn</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <div class="icon"><img src="./img/github.png" alt="GitHub-Icon"></div>
+                    <a href="https://github.com/Hazbraaaa">
+                        <div class="contact-info">
+                            <h1>GitHub</h1>
+                            <h2>@GitHub</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <div class="icon"><img src="./img/mail.png" alt="Mail-Icon"></div>
+                    <div class="contact-info">
+                        <h1>Mail</h1>
+                        <h2>test@test.fr</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="footer container">
+            <div class="brand">
+                <div class="icon"><img src="./img/Logo HAZ.png" alt="LinkedIn-Icon"></div>
+                <h1>- <span>C</span>lément <span>H</span>AZERA</h1>
+            </div>
+            <p>Tous droits réservés © 2025 HAZ</p>
+        </div>
+    </section>
 </body>
 
 </html>

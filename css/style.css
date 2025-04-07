@@ -39,7 +39,7 @@ p {
 }
 .section-title {
     font-size: 4em;
-    font-weight: 300;
+    font-weight: 500;
     color: black;
     margin-top: 10px;
     text-transform: uppercase;
@@ -74,8 +74,7 @@ p {
 }
 #header .header {
     min-height: 8vh;
-    background-color: rgba(12, 12, 12, 0.24);
-    transition: 0.3s ease background-color;
+    transition: 0.4s ease background-color;
 }
 #header .nav-bar {
     display: flex;
@@ -382,17 +381,6 @@ p {
     flex-basis: 50%;
     height: 300px;
     overflow: hidden;
-    position: relative;
-}
-#projects .project-img::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #121212;
-    opacity: 0.4;
 }
 #projects .project-img img {
     transition: 0.3s ease transform;

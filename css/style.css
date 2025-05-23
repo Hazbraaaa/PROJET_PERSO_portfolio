@@ -336,6 +336,7 @@ p {
 #about .about-item {
     display: flex;
     height: 450px;
+    min-height: fit-content;
     flex-basis: 80%;
     align-items: flex-start;
     justify-content: flex-start;
